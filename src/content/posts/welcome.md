@@ -4,6 +4,8 @@ description: "AI Privacy Report is an independent watchdog covering AI policy, r
 pubDate: 2026-05-03
 tags: ["meta"]
 category: "site"
+heroImage: https://aisec-imagegen.th3gptoperator.workers.dev/featured/aiprivacy.report/welcome.png
+heroAlt: "What this site is for"
 ---
 
 AI Privacy Report covers AI regulation and AI governance from outside the industry, not from inside it.
