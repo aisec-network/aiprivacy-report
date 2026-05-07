@@ -1,5 +1,6 @@
 ---
 title: "What this site is for"
+author: "Hannah Linden"
 description: "AI Privacy Report is an independent watchdog covering AI policy, regulation, and accountability."
 pubDate: 2026-05-03
 tags: ["meta"]
