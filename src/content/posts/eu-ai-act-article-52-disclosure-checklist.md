@@ -14,7 +14,7 @@ sources:
     url: "https://artificialintelligenceact.eu/"
 schema:
   type: "Article"
-heroImage: https://aisec-imagegen.th3gptoperator.workers.dev/?prompt=European%20Union%20regulatory%20documents%2C%20measured%20editorial%20style%2C%20muted%20palette&aspect=hero
+heroImage: https://aisec-imagegen.th3gptoperator.workers.dev/featured/aiprivacy.report/eu-ai-act-article-52-disclosure-checklist.png
 heroAlt: "EU AI Act Article 52 disclosure checklist visualization"
 ---
 
