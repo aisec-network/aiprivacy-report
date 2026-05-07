@@ -1,43 +1,54 @@
-/* Brand override for aiprivacy-report — cluster=policy.
- * Uses cluster-matching selector specificity (0,1,1) so this OVERRIDES the
- * cluster defaults from globals.css, which use the same selector specificity.
- * Source order wins; brand.css is imported after globals.css in BaseLayout.
- */
+/* Brand + visual variant for aiprivacy-report
+ * cluster: policy
+ * variant: v6_minimal_typography
+ * Generated 2026-05-07. Higher specificity than globals.css cluster rules. */
 
 @import url("https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap");
 
-body[data-cluster="policy"] {
+body[data-cluster='policy'] {
   --bg: 251 248 240;
   --fg: 30 26 18;
   --surface: 254 243 199;
   --muted: 251 248 240;
   --muted-fg: 146 64 14;
   --border: 146 64 14;
-
   --font-display: "Source Serif 4", system-ui, sans-serif;
   --font-body: "Source Sans 3", system-ui, sans-serif;
-
-  /* Override the accent ramp midpoints with brand accent.
-   * The 400-700 range is what most components use. */
   --accent-400: 217 119 6;
   --accent-500: 217 119 6;
   --accent-600: 217 119 6;
   --accent-700: 217 119 6;
-
-  /* Brand metadata */
   --brand-tone: "policy-parchment-amber";
   --brand-accent-rgb: 217 119 6;
+  --brand-variant: "v6_minimal_typography";
+}
+html.dark body[data-cluster='policy'] {
+  --bg: 251 248 240; --fg: 30 26 18; --surface: 254 243 199;
+  --accent-500: 217 119 6; --accent-600: 217 119 6;
 }
 
-/* Same in dark mode (most brand books are dark-tone already) */
-html.dark body[data-cluster="policy"] {
-  --bg: 251 248 240;
-  --fg: 30 26 18;
-  --surface: 254 243 199;
-  --muted: 251 248 240;
-  --muted-fg: 146 64 14;
-  --accent-400: 217 119 6;
-  --accent-500: 217 119 6;
-  --accent-600: 217 119 6;
-  --accent-700: 217 119 6;
+
+body[data-cluster='policy'] {
+  --type-scale: 1.414;
+  --space-y: 3rem;
+}
+body[data-cluster='policy'] h1 { font-size: calc(1rem * var(--type-scale) * var(--type-scale) * var(--type-scale) * var(--type-scale)); line-height: 1.05; }
+body[data-cluster='policy'] h2 { font-size: calc(1rem * var(--type-scale) * var(--type-scale) * var(--type-scale)); line-height: 1.15; }
+body[data-cluster='policy'] h3 { font-size: calc(1rem * var(--type-scale) * var(--type-scale)); line-height: 1.2; }
+body[data-cluster='policy'] p { margin-block: var(--space-y); }
+
+
+/* Hero / header layout — variant: left */
+body[data-cluster='policy'] .hero, body[data-cluster='policy'] header.site-header { text-align: left; padding: 10rem 1rem 4rem; }
+
+/* Card style — variant: list-divider */
+body[data-cluster='policy'] article { border-bottom: 1px dotted rgb(146 64 14); padding-bottom: 1rem; }
+
+/* Accent application — variant: subtle-text */
+body[data-cluster='policy'] strong, body[data-cluster='policy'] em { color: rgb(217 119 6); }
+
+/* Border radius — variant uses 0 */
+body[data-cluster='policy'] article,
+body[data-cluster='policy'] .card {
+  border-radius: 0;
 }
