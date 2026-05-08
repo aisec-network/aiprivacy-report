@@ -1,0 +1,143 @@
+{
+  "title": "AI Policy, Compliance & Governance Tools",
+  "description": "Tools, frameworks, and reference documents for navigating AI regulation, compliance, audit, and governance — across EU AI Act, GDPR, and global frameworks.",
+  "categories": [
+    {
+      "name": "Regulatory Reference",
+      "tools": [
+        {
+          "name": "EU AI Act — Regulation 2024/1689",
+          "url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj",
+          "license": "Free",
+          "blurb": "The official text of the EU AI Act. Phased applicability through 2027.",
+          "our_take": "Read in full at least once. The recitals (preamble) clarify intent for ambiguous articles."
+        },
+        {
+          "name": "AI Act Compliance Tracker",
+          "url": "https://artificialintelligenceact.eu/",
+          "license": "Free",
+          "blurb": "Independent tracker for EU AI Act implementation deadlines, draft templates, and Commission guidance.",
+          "our_take": "Lower-friction than reading EUR-Lex directly. Update cadence is fast."
+        },
+        {
+          "name": "EDPB Guidance on AI Models",
+          "url": "https://www.edpb.europa.eu/our-work-tools/our-documents/opinion-board-art-64/opinion-282024-certain-data-protection-aspects_en",
+          "license": "Free",
+          "blurb": "European Data Protection Board's interpretation of GDPR as applied to AI model training and deployment.",
+          "our_take": "Critical for anyone training models on EU-resident data. The guidance is firm even where the law is ambiguous."
+        },
+        {
+          "name": "NIST AI Risk Management Framework",
+          "url": "https://www.nist.gov/itl/ai-risk-management-framework",
+          "license": "Free",
+          "blurb": "US federal framework for AI risk management — voluntary but increasingly referenced in procurement.",
+          "our_take": "Less prescriptive than EU AI Act; more guidance. Useful as a structuring framework even outside US-federal contexts."
+        },
+        {
+          "name": "ISO/IEC 42001",
+          "url": "https://www.iso.org/standard/81230.html",
+          "license": "Paid",
+          "blurb": "International standard for AI management systems — auditable, certifiable.",
+          "our_take": "Worth pursuing if you sell to enterprises or government. The certification is becoming a procurement signal."
+        }
+      ]
+    },
+    {
+      "name": "Risk Frameworks",
+      "tools": [
+        {
+          "name": "MITRE ATLAS",
+          "url": "https://atlas.mitre.org/",
+          "license": "Free",
+          "blurb": "Threat-landscape framework for AI/ML systems — tactics, techniques, case studies.",
+          "our_take": "Use as the reference taxonomy for adversarial threat modeling. Map your incident response runbooks to ATLAS techniques."
+        },
+        {
+          "name": "OWASP LLM Top 10",
+          "url": "https://owasp.org/www-project-top-10-for-large-language-model-applications/",
+          "license": "Free",
+          "blurb": "Categorized risks for LLM applications: prompt injection, output handling, training data poisoning, etc.",
+          "our_take": "The most actionable security checklist for LLM apps. Should anchor any application-tier security review."
+        },
+        {
+          "name": "OECD AI Principles",
+          "url": "https://oecd.ai/en/ai-principles",
+          "license": "Free",
+          "blurb": "International norm-setting framework for AI governance. Adopted by 47+ countries.",
+          "our_take": "Less actionable than NIST or EU AI Act, but useful for cross-jurisdictional alignment."
+        }
+      ]
+    },
+    {
+      "name": "Compliance Tooling",
+      "tools": [
+        {
+          "name": "Drata",
+          "url": "https://drata.com/",
+          "license": "Commercial",
+          "blurb": "Compliance automation platform — SOC 2, ISO 27001, ISO 42001 evidence collection.",
+          "our_take": "Pricey but saves substantial audit prep time. The 42001 module is recent."
+        },
+        {
+          "name": "Vanta",
+          "url": "https://www.vanta.com/",
+          "license": "Commercial",
+          "blurb": "Compliance and security posture automation. Comparable to Drata.",
+          "our_take": "Pick based on integrations. Both vendors are mature; differentiation is mostly UI and pricing."
+        },
+        {
+          "name": "Credo AI",
+          "url": "https://www.credo.ai/",
+          "license": "Commercial",
+          "blurb": "AI governance platform — model registry, risk assessment, compliance reporting.",
+          "our_take": "Most AI-specific of the governance platforms. Worth evaluating if you have multiple regulated AI systems."
+        }
+      ]
+    },
+    {
+      "name": "Documentation Templates",
+      "tools": [
+        {
+          "name": "Model Cards (Mitchell et al.)",
+          "url": "https://arxiv.org/abs/1810.03677",
+          "license": "Free",
+          "blurb": "Original model-card template — purpose, training, evaluation, ethical considerations.",
+          "our_take": "The de facto standard. Customize per organization but follow the structure."
+        },
+        {
+          "name": "Datasheets for Datasets (Gebru et al.)",
+          "url": "https://arxiv.org/abs/1803.09010",
+          "license": "Free",
+          "blurb": "Datasheet template for ML datasets — provenance, composition, recommended uses.",
+          "our_take": "Companion to model cards. Required for credible disclosure under EU AI Act and most enterprise procurement."
+        },
+        {
+          "name": "Hugging Face Model Card guide",
+          "url": "https://huggingface.co/docs/hub/model-card-guidebook",
+          "license": "Free",
+          "blurb": "HF's documentation template, more detailed than Mitchell et al.",
+          "our_take": "Use as the practical template; it integrates with HF model hosting if that's your distribution channel."
+        }
+      ]
+    },
+    {
+      "name": "Privacy & Data",
+      "tools": [
+        {
+          "name": "Microsoft Presidio",
+          "url": "https://github.com/microsoft/presidio",
+          "license": "MIT",
+          "blurb": "PII detection and anonymization for text data.",
+          "our_take": "Use upstream of model training and inference for GDPR/CCPA compliance posture."
+        },
+        {
+          "name": "OpenDP",
+          "url": "https://opendp.org/",
+          "license": "MIT",
+          "blurb": "Open-source differential privacy library.",
+          "our_take": "Mathematically rigorous; production deployment is non-trivial. Worth it for high-sensitivity data."
+        }
+      ]
+    }
+  ]
+}
