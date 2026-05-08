@@ -11,7 +11,7 @@ body[data-cluster] {
   --font-display: Lora, "Iowan Old Style", Georgia, serif;
   --font-body: "DM Sans", "Helvetica Neue", system-ui, sans-serif;
   --font-mono: "DM Mono", ui-monospace, monospace;
-  --brand-accent-rgb: 161 219 36;
+  --brand-accent-rgb: 0 0 0;
   --brand-identity-font: "f04_serif_lora_dmsans";
   --brand-identity-palette: "p28_h79_newsprint";
   --brand-identity-layout: "dashboard";
@@ -26,7 +26,7 @@ html.dark body[data-cluster] {
   --border: 56 50 40;
   --surface: 18 16 12;
   --surface-alt: 28 24 20;
-  --brand-accent-rgb: 187 238 79;
+  --brand-accent-rgb: 255 255 255;
 }
 
 /* Density modifiers */
