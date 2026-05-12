@@ -105,3 +105,5 @@ Penalties for non-compliance with Article 52 obligations: up to €15M or 3% of 
 ## What to watch in 2026
 
 The training-data summary template is the most consequential remaining specification. Watch the AI Office's publication schedule — the first draft is in consultation now, the final template will set the bar for compliance work across the industry. Providers planning major model releases in late 2026 or 2027 should be designing their documentation pipeline against the most demanding plausible interpretation of the template, not the current draft.
+
+For more context, [AI policy watch](https://neuralwatch.org/) covers related topics in depth.
